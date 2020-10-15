@@ -34,3 +34,8 @@ The module provides 3 core routines:
 * ``termial_random.seed(n)`` used to initialie glibc random number generator based on ``n`` provided
 * ``termial_random.seed_init()`` used to initialie glibc random number generator based on the current time
 * ``termial_random.random(n)`` used to compute termial random number for the given ``n``
+
+Benchmarks
+==========
+
+See `this gist with benchmarks <https://gist.github.com/fridex/3794b9cbb35d1b8f523a94ee9d86b8e4>`__.
