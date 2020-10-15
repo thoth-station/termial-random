@@ -18,7 +18,7 @@
 """Implementation of random termial."""
 
 __title__ = "termial"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __author__ = "Fridolin Pokorny <fridolin@redhat.com>"
 
 from .random import random
