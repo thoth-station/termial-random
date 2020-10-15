@@ -1,0 +1,7 @@
+.hypothesis/
+build/
+dist/
+termial.egg-info/
+termial_random.egg-info/
+termial_random/__pycache__/
+termial_random/*.so
