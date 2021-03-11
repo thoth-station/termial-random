@@ -5,7 +5,7 @@ This minimalistic CPython extension provides termial random implementation.
 
 
 See `this
-<https://medium.com/@fridex/termial-random-for-prioritized-picking-an-item-from-a-list-a65a4f563224>`__
+<https://dev.to/fridex/termial-random-for-prioritized-picking-an-item-from-a-list-22jh>`__
 and `this
 <https://medium.com/@fridex/optimizing-termial-random-by-removing-binomial-coefficient-e39b9ca7aaa3>`__
 article for more info on termial random.
