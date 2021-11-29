@@ -66,11 +66,14 @@ setup(
     download_url="https://pypi.org/project/termial-random",
     license="GPLv3+",
     packages=["termial_random"],
+    package_data={
+        "termial_random": ["py.typed", "__init__.pyi"],
+    },
     ext_modules=[
         Extension(
             "termial_random.random",
             sources=["termial_random/random.c"],
-            extra_compile_args = ["-std=c17", "-lm"],
+            extra_compile_args=["-std=c17", "-lm"],
         ),
     ],
     cmdclass={"test": Test},
