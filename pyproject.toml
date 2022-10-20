@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "termial-random"
+description = "Extensions to standard Python's heapq for performance applications"
+authors = [
+  { name="Fridolin Pokorny", email="fridolin@redhat.com" },
+]
+license = {text = "GPLv3+"}
+readme = "README.rst"
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "termial_random.__version__"}
+
+[tool.setuptools]
+py-modules = ["_custom_build"]
+packages = ["termial_random"]
+
+[tool.setuptools.cmdclass]
+build_py = "_custom_build.build_py"
+
+[tool.setuptools.exclude-package-data]
+termial_random = ["*.c"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-l -s -vvv"
+testpaths = [
+    "tests",
+]
