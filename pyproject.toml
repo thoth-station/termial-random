@@ -27,6 +27,7 @@ termial_random = ["*.c"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
+pythonpath = ["."]
 addopts = "-l -s -vvv"
 testpaths = [
     "tests",
